@@ -1,0 +1,104 @@
+@import '~bootstrap/scss/bootstrap';
+@import '../public/assets/css/font-awesome-pro.css';
+@import '../public/assets/css/flaticon.css';
+@import '../public/assets/css/spacing.css';
+@import "react-image-lightbox/style.css";
+@import 'react-rangeslider/lib/index.css';
+@import '../node_modules/react-modal-video/scss/modal-video.scss';
+@import 'react-toastify/dist/ReactToastify.css';
+@import '../public/assets/scss/main.scss';
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.bd-banner__shape span {
+    font-size: 1.35em !important;
+    color: black;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.banner__overlay::before{
+    background: url("../public/assets/img/banner/clean_hills.jpg") !important;
+    background-size: cover !important;
+        /* Make the background image cover the entire element */
+    background-repeat: no-repeat !important;
+}
+
+.logo-white{
+    display: block !important;
+    width: 3.5em !important;
+}
+
+.bd-header__logo-bg{
+    display:none !important;
+}
+
+.bd-banner__line{
+    display: none !important;
+}
+
+.main-menu ul li a:before{
+    background-color: red !important;
+}
+
+.main-menu ul li:hover>a{
+    color: blue !important;
+}
+
+.offcanvas__close-btn{
+    background: #df391f !important;
+}
+
+.mobile_qhaul_banner{
+    width: 3.5em !important;
+}
+
+.offcanvas__social ul li a{
+    color: Blue !important;
+}
+
+.offcanvas__contact ul li:hover a {
+    color: red !important;
+}
+
+i.fal.fa-envelope {
+    color:#df391f !important;
+    background-color: skyblue !important;
+}
+i.far.fa-phone {
+    color: blue !important;
+    background-color: #FFCCCB !important;
+}
+
+@media only screen and (max-width: 767px) {
+    section.bd-banner__area.grey-bg.banner__overlay.banner__height-1.p-relative{
+        background: url("../public/assets/img/banner/clean_hills.jpg");
+        background-repeat: none;
+        background-size: cover;
+    }
+    /* CSS styles for mobile devices go here */
+}
